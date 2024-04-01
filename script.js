@@ -24,7 +24,7 @@ function sendEmail() {
   const bodySubject = `Details: <br> <br> Email Address: ${email.value} <br> Notes: ${notes.value}`;
 
   Email.send({
-    SecureToken: "400cb0da-0119-4637-99f1-264853788997",
+    SecureToken: "0e191af6-a0ea-4be9-9682-184e723d4533",
     To: "team@howdypays.com",
     From: "team@howdypays.com",
     Subject: "New Message from Client",
