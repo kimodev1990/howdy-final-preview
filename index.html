@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Howdy start page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Howdy | Coming Soon</title>
+</head>
+
+<body id="body-bg" class="bg-bgWebsite flex flex-col items-center justify-center md:justify-between min-h-screen ">
+    <div class="pt-9 pb-1 mb-12 md:mb-0">
+        <h1 id="upper-title" class="font-bauhaus text-4xl md:text-5xl text-center text-labelColor">coming
+            soon</h1>
+    </div>
+    <div id="logo-title" class="w-screen relative md:bottom-11">
+        <img class="w-full" src="./splash2.png" alt="logo">
+    </div>
+    <div class="md:w-8/12 md:absolute md:bottom-5">
+        <div class="mt-7 md:mt-0 md:mb-2">
+            <h1 id="lower-title" class="font-bauhaus special-size md:text-4xl text-center text-labelColor">
+                LIVE LIFE IN
+                FLOW
+            </h1>
+        </div>
+        <div class="w-full mt-14 md:mt-0">
+            <div class="mx-auto flex flex-col items-center justify-center gap-4 w-2/5 md:w-full md:flex-row ">
+                <button
+                    class="text-buttonColor button-background  py-2  border-2 text-lg font-bauhaus italic border-buttonColor rounded-full w-52">We're
+                    Hiring
+                </button>
+                <button id="partnerships-button"
+                    class="text-buttonColor button-background button-background:hover py-2 border-2 text-lg font-bauhaus italic border-buttonColor rounded-full w-52">Partnerships
+                </button>
+                <button id="media-button"
+                    class="text-buttonColor button-background  py-2 border-2 text-lg font-bauhaus italic border-buttonColor rounded-full w-52">Media
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="partnerships-popup" class="hidden absolute top-20">
+        <div
+            class=" max-w-sm md:max-w-lg bg-gray-700 flex flex-col justify-center items-center gap-3 px-6 md:px-24 mx-4 md:mx-0  py-14 rounded-2xl">
+            <div id="close-sign-label-partner" class="close-sign md:right-2 cursor-pointer">
+                <div class="left-line"></div>
+                <div class="right-line"></div>
+            </div>
+            <form id="first-form" class="field flex flex-col justify-center gap-3">
+                <h1 class="text-buttonColor uppercase font-bauhaus pop-title-size px-10 text-center">partner with flow
+                </h1>
+                <input class=" bg-buttonColor placeholder  outline-none py-2 pl-4 rounded-full w-full" type="text"
+                    id="email-form-partners" placeholder="Email" name="email">
+                <h2 id="invalid" class="text-red-500 text-sm text-right hidden">Invalid Form</h2>
+                <textarea
+                    class=" w-full h-32 outline-none bg-buttonColor overflow-scroll overflow-x-hidden overflow-y-auto resize-none rounded-2xl px-4 pt-2"
+                    placeholder="Notes..." name="notes" id="notes-form-partners" cols="30" rows="10"></textarea>
+                <h2 id="noblank" class="text-red-500 text-sm text-right hidden">Can't be Blank</h2>
+                <button class="w-full font-bauhaus text-xl button-bg-signup text-signupColor p-2 rounded-2xl">Sign
+                    Up</button>
+            </form>
+        </div>
+    </div>
+    <div id="connect-popup" class="hidden absolute top-20">
+        <div
+            class=" max-w-sm md:max-w-lg bg-gray-700 flex flex-col justify-center items-center gap-3 px-6 md:px-24 mx-4 md:mx-0  py-14 rounded-2xl">
+            <div id="close-sign-label-media" class="close-sign md:right-2 cursor-pointer">
+                <div class="left-line"></div>
+                <div class="right-line"></div>
+            </div>
+            <form id="second-form" class="flex flex-col justify-center gap-3">
+                <h1 class="text-buttonColor uppercase font-bauhaus pop-title-size px-10 text-center">connect with flow
+                </h1>
+                <input class="bg-buttonColor placeholder  outline-none py-2 pl-4 rounded-full w-full" type="text"
+                    id="email-form-media" placeholder="Email" name="email">
+                <h2 id="invalid-media" class="text-red-500 text-sm text-right hidden">Invalid Form</h2>
+                <textarea
+                    class="w-full h-32 outline-none bg-buttonColor overflow-scroll overflow-x-hidden overflow-y-auto resize-none rounded-2xl px-4 pt-2"
+                    placeholder="Notes..." name="notes" id="notes-form-media" cols="30" rows="10"></textarea>
+                <h2 id="noblank-media" class="text-red-500 text-sm text-right hidden">Can't be Blank</h2>
+                <button class="w-full font-bauhaus text-xl button-bg-signup text-signupColor p-2 rounded-2xl">Sign
+                    Up</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

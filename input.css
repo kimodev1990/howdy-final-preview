@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "bauhaus";
+  src: url("../Bauhaus Demi.otf") format("truetype");
+}
+
+.special-size {
+  font-size: clamp(2.125rem, 1.589rem + 2.857vw, 2.25rem);
+}
+
+.pop-title-size {
+  font-size: clamp(1.313rem, -1.5rem + 15vw, 2.25rem);
+}
+
+.change-bg {
+  @apply bg-bgWhilePopUp;
+}
+
+.title-opacity {
+  @apply opacity-50;
+}
+
+.close-sign {
+  position: absolute;
+  top: 23px;
+  right: 25px;
+  width: 30px;
+  height: 24px;
+}
+
+.left-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  transform: rotate(45deg);
+  background: #8fadae;
+}
+
+.right-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  transform: rotate(-45deg);
+  background: #8fadae;
+}
+
+.button-background {
+  background-size: 300%;
+  transition: 0.4s;
+  background-image: linear-gradient(
+    to left,
+    #ffc312,
+    #ee5a24,
+    #4d4d4d,
+    #4d4d4d
+  );
+}
+
+.button-background:hover {
+  background-position: right;
+}
+
+.button-bg-signup {
+  background-size: 300%;
+  transition: 0.4s;
+  background-image: linear-gradient(
+    to left,
+    #ffc312,
+    #ee5a24,
+    #8fadae,
+    #8fadae
+  );
+}
+
+.button-bg-signup:hover {
+  background-position: right;
+}
