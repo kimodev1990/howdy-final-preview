@@ -993,6 +993,14 @@ video {
     justify-content: space-between;
   }
 
+  .md\:justify-around {
+    justify-content: space-around;
+  }
+
+  .md\:justify-evenly {
+    justify-content: space-evenly;
+  }
+
   .md\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
